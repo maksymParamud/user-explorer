@@ -9,11 +9,21 @@ async function renderList() {
     const userContainer = document.createElement("div");
     userContainer.className = "user-container"; // стильове ім'я класу
 
-    const userName = document.createElement("div");
-    userName.className = "user-header";
-    userName.innerHTML = i.name;
+    const userHeader = document.createElement("div");
+    userHeader.className = "user-header";
+    userHeader.innerHTML = i.name;
 
-    userContainer.appendChild(userName);
+    const userMain = document.createElement("div");
+    userMain.className = "user-main";
+    userMain.innerHTML = `Email: ${i.email}<br>Company: ${i.company.name}`;
+
+    const userFooter = document.createElement("div");
+    userFooter.className = "user-footer";
+    userFooter.innerHTML = `Phone: ${i.phone}`;
+
+    userContainer.appendChild(userHeader);
+    userContainer.appendChild(userMain);
+    userContainer.appendChild(userFooter);
     main.appendChild(userContainer);
   }
 }
