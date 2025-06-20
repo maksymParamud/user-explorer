@@ -56,3 +56,15 @@ main {
     padding-top: 2px;
     border-top: 2px dotted rgb(255, 255, 255);
 }
+
+.main-no-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.message {
+    color: #fff;
+    font-size: 2.5rem;
+}

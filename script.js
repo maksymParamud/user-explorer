@@ -14,6 +14,19 @@ async function renderList() {
 function renderUsers(users) {
   main.innerHTML = "";
 
+  if (users.length === 0) {
+    const message = document.createElement("div");
+    message.className = "message";
+    message.textContent = "No users found :(";
+
+    main.classList.add("main-no-users");
+
+    main.appendChild(message);
+    return;
+  } else {
+    main.classList.remove("main-no-users");
+  }
+
   for (const user of users) {
     const userContainer = document.createElement("div");
     userContainer.className = "user-container";
