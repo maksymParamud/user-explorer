@@ -16,7 +16,7 @@
 
 ## 🔗 Live Demo
 
-👉 [View Live Website]()
+👉 [View Live Website](https://maksymparamud.github.io/user-explorer/)
 
 
 ## Contact:
